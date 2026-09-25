@@ -1,6 +1,6 @@
-# KPSTI Cross-Agency Project Monitoring Hub (`kpsti-project-monitoring-hub`)
+# KPSTI Cross-Agency Monitoring (`kpsti-cross-agency-monitoring`)
 
-Central project monitoring, analytics, and cross-agency tracking hub for **Kementerian Pendidikan, Sains, Teknologi & Inovasi (KPSTI)** Sabah and its sub-agencies/departments (JTDI, JPSM, PNS, SSTC, SCENIC, DGD, etc.).
+Central project monitoring, analytics, and cross-agency tracking system for **Kementerian Pendidikan, Sains, Teknologi & Inovasi (KPSTI)** Sabah and its sub-agencies/departments (JTDI, JPSM, PNS, SSTC, SCENIC, DGD, etc.).
 
 ---
 
@@ -27,8 +27,8 @@ Central project monitoring, analytics, and cross-agency tracking hub for **Kemen
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/arinn-danish/kpsti-project-monitoring-hub.git
-   cd kpsti-project-monitoring-hub
+   git clone https://github.com/arinn-danish/kpsti-cross-agency-monitoring.git
+   cd kpsti-cross-agency-monitoring
    ```
 
 2. **Install dependencies:**
@@ -55,7 +55,7 @@ Central project monitoring, analytics, and cross-agency tracking hub for **Kemen
 
 1. **Connect to Netlify:**
    - Go to [Netlify Dashboard](https://app.netlify.com/) and click **"Add new site"** -> **"Import an existing project"**.
-   - Choose **GitHub** and select your repository `kpsti-project-monitoring-hub`.
+   - Choose **GitHub** and select your repository `kpsti-cross-agency-monitoring`.
 
 2. **Build Settings** (automatically pre-configured via `netlify.toml`):
    - **Build Command:** `npm run build`
