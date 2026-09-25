@@ -1,0 +1,66 @@
+{
+  "entities": {
+    "projects": {
+      "title": "Projects",
+      "description": "Government projects submitted and managed in Project Agent",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "leadAgency": { "type": "string" },
+        "participatingAgencies": { "type": "array", "items": { "type": "string" } },
+        "unitSection": { "type": "string" },
+        "projectLead": { "type": "string" },
+        "assignedTeam": { "type": "string" },
+        "startDate": { "type": "string" },
+        "targetCompletionDate": { "type": "string" },
+        "status": { "type": "string" },
+        "progressPercentage": { "type": "number" },
+        "latestProgressUpdate": { "type": "string" },
+        "currentIssueBlocker": { "type": "string" },
+        "nextAction": { "type": "string" },
+        "lastUpdatedDate": { "type": "string" },
+        "history": { "type": "array" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "createdBy": { "type": "string" },
+        "creatorEmail": { "type": "string" }
+      },
+      "required": ["id", "title", "leadAgency", "status"]
+    },
+    "agencies": {
+      "title": "Agencies",
+      "description": "Government agencies and departments list",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "code": { "type": "string" },
+        "category": { "type": "string" },
+        "description": { "type": "string" },
+        "isCustom": { "type": "boolean" },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "updatedBy": { "type": "string" }
+      },
+      "required": ["id", "name", "code"]
+    },
+    "submissions": {
+      "title": "Submissions",
+      "description": "Audit trail log of every project creation and progress update submission with timestamps",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "type": "string", "enum": ["CREATE_PROJECT", "UPDATE_PROGRESS", "UPDATE_PROJECT", "DELETE_PROJECT", "MANAGE_AGENCY", "INITIALIZE_SAMPLE_DATA", "GEMINI_ASSISTANT_QUERY"] },
+        "projectId": { "type": "string" },
+        "projectTitle": { "type": "string" },
+        "userId": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "userName": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "details": { "type": "object" }
+      },
+      "required": ["id", "type", "timestamp", "userId"]
+    }
+  }
+}

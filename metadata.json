@@ -1,0 +1,8 @@
+{
+  "name": "KPSTI Cross-Agency Project Monitoring Hub",
+  "description": "Central project monitoring application for cross-agency coordination, tracking milestones, blockers, and executive progress visibility.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
